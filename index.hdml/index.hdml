@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jarvis</title>
+</head>
+
+<body>
+  <h1>JARVIS</h1>
+  <p>Hello Sir. JARVIS is online.</p>
+
+  <button onclick="speak()">Talk to JARVIS</button>
+
+  <script>
+    function speak() {
+      const message = new SpeechSynthesisUtterance("Hello Sir. JARVIS is online.");
+      speechSynthesis.speak(message);
+    }
+  </script>
+</body>
+</html>
